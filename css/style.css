@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box !important;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+p {
+  text-align: justify !important;
+}
+
+.container {
+  width: 100% !important;
+}
+
+.flex {
+  display: flex !important;
+}
+
+.justify-between {
+  justify-content: space-between !important;
+}
+
+.justify-end {
+  justify-content: flex-end !important;
+}
+
+.items-center {
+  align-items: center !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.px3 {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.w-25 {
+  width: 25% !important;
+}
+
+.card {
+  border: 1px solid black !important;
+  padding: 1rem;
+}
+
+.ps-3 {
+  padding-right: 1rem !important;
+}
+
+.pe-3 {
+  padding-left: 1rem !important;
+}
+
+.my-3 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+@media (min-width: 780px) {
+  .container {
+    width: 80% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .md-w-4 {
+    width: 33.33333333% !important;
+  }
+  .md-w-8 {
+    width: 66.66666666% !important;
+  }
+  .md-w-6 {
+    width: 50% !important;
+  }
+}
+header {
+  font: size 0.5rem;
+}
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  padding: 1rem 0rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.sub-menu a {
+  padding: 0.4rem;
+}
+
+.top-nav {
+  padding: 1rem 0;
+}
+.top-nav .first-ul a {
+  padding-right: 0 !important;
+}
+.top-nav .last-ul a {
+  padding-left: 0 !important;
+}
+
+a:hover {
+  color: #23c9cb;
+}
+
+.bg-grad {
+  position: relative;
+}
+.bg-grad a:hover {
+  color: inherit;
+}
+
+.has-child {
+  padding: 1.2rem 0.5rem;
+}
+.has-child .sub-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 3.8rem;
+}
+
+.has-child:hover {
+  background-color: rgba(242, 241, 241, 0.8980392157);
+}
+.has-child:hover .sub-menu {
+  display: flex;
+}
+
+.dark-mode {
+  background: black;
+}
+.dark-mode a,
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6,
+.dark-mode p {
+  color: white;
+}
+
+.has-child > a {
+  position: relative;
+}
+.has-child > a::after {
+  content: "";
+  display: none;
+  position: absolute;
+  bottom: -1px;
+  left: 48%;
+  top: 1.8rem;
+  border: 8px solid;
+  border-color: transparent transparent #a8a8a8 transparent;
+}
+.has-child > a:hover::after {
+  display: block;
+}
+
+body {
+  font-family: bakh;
+  color: rgb(73, 70, 70);
+}
+
+.logo-size {
+  width: 12rem;
+}
+
+.bg-grad {
+  background: linear-gradient(90deg, rgb(34, 200, 206) 0px, rgb(42, 217, 165) 100%);
+}
+
+.whole-page-sub-menu {
+  background-color: #f1f1f1;
+  padding: 1rem;
+}
+
+.searchform {
+  width: 50%;
+}
+
+.searchform.active {
+  width: 45%;
+}
+
+.form-search {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #f1f1f1;
+  font-family: "bakh" !important;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #f1f1f1;
+  width: 100%;
+}
+
+.text-whith {
+  color: white;
+}
+
+.vorod {
+  background-color: #f1f1f1;
+}
+
+.vorod:hover {
+  background-color: rgb(42, 217, 165);
+}
+
+#harchi {
+  content: "images/sibbaner-hovered.png";
+}
+
+#harchi:hover {
+  content: "images/resigno.jpg";
+}
+
+.card {
+  border-color: rgb(73, 70, 70) !important;
+}
+
+.in-card-image {
+  box-shadow: 1px 1px;
+}
+
+/*# sourceMappingURL=style.css.map */

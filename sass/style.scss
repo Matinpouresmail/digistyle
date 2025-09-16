@@ -1,0 +1,92 @@
+@use "fonts";
+@use "base";
+@use "menu";
+@use "daynight";
+@use  "darkmod";
+$basecolor:  rgb(73, 70, 70);
+$colorHover: #23c9cb;
+$graddark:   rgb(34, 200, 206);
+$gradlight:  rgb(42, 217, 165);
+$lightbg:    #f1f1f1;
+
+.has-child {
+    &>a {
+        position: relative;
+    }
+
+    &>a::after {
+        content: "";
+        display: none;
+        position: absolute;
+        bottom: -1px;
+        left: 48%;
+        top: 1.8rem;
+        border: 8px solid;
+        border-color: transparent transparent #a8a8a8 transparent;
+    }
+
+    &>a:hover {
+        &::after {
+            display: block;
+        }
+    }
+}
+
+body {
+    font-family: bakh;
+    color: $basecolor;
+}
+
+.logo-size {
+    width: 12rem;
+}
+
+.bg-grad {
+    background: linear-gradient(90deg, $graddark 0px, $gradlight 100%);
+    // padding: 0.5rem;
+}
+.whole-page-sub-menu{
+    background-color:$lightbg ;
+    padding: 1rem;
+}
+.searchform{
+    width:50%
+
+}
+.searchform.active{
+    width:45%
+
+}
+
+.form-search{
+background-color: transparent;
+border: none;
+outline: none;
+color: $lightbg;
+font-family:"bakh" !important;
+font-size: 1.2rem;
+border-bottom: 1px solid $lightbg;
+width: 100%;
+}
+.text-whith{
+    color: white;
+}
+.vorod{
+    background-color: $lightbg;
+}
+.vorod:hover{
+    background-color:$gradlight;
+}
+#harchi{
+    content: "images/sibbaner-hovered.png";
+}
+#harchi:hover{
+    content: "images/resigno.jpg";
+}
+ .card{
+        border-color:$basecolor !important ;
+   
+    }
+   .in-card-image{
+    box-shadow: 1px 1px;
+   }

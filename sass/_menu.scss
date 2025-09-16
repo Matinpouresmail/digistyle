@@ -1,0 +1,71 @@
+$colorHover: #23c9cb;
+$lightbg: #f1f1f1;
+
+header {
+    font: size 0.5rem;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+a {
+    padding: 1rem 0rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.sub-menu {
+    a{
+        padding:0.4rem; 
+    }
+}
+.top-nav {
+    padding: 1rem 0;
+
+    .first-ul {
+        a {
+            padding-right: 0 !important;
+        }
+    }
+
+    .last-ul {
+        a {
+            padding-left: 0 !important;
+        }
+    }
+}
+
+a:hover {
+    color: $colorHover;
+}
+
+.bg-grad {
+    position: relative;
+
+    a:hover {
+        color: inherit;
+    }
+}
+
+.has-child {
+   padding: 1.2rem 0.5rem;
+    .sub-menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 3.8rem;
+    }
+}
+
+.has-child:hover {
+    background-color: #f2f1f1e5;
+
+    .sub-menu {
+        display: flex;
+    }
+    
+
+}
